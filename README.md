@@ -1,5 +1,5 @@
-this text should be upper
+THIS TEXT SHOULD BE UPPER
 
-inserted line
+INSERTED LINE
 
-inserted line
+INSERTED LINE
