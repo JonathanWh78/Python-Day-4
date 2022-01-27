@@ -23,7 +23,6 @@ D8 = Dice(8)
 D10 = Dice(10)
 D20 = Dice(20)
 D100 = Dice(100)
-print (D2.NoofFaces)
 
 #Loop to make it feel more interactive
 DSelect = int
@@ -45,13 +44,13 @@ while DSelect != 0:
     if DSelect == 1:
         Roll = Dice.Roll(D2.NoofFaces)
         if Roll == 1:
-            print("-----------------------------------------")
-            print ("Result: You Flipped A Coin And Got Heads")
-            print("-----------------------------------------")
+            print("------------------------------------------")
+            print ("Result: You Flipped A Coin And Got: Heads")
+            print("------------------------------------------")
         elif Roll == 2:
-            print("-----------------------------------------")
-            print ("Result: You Flipped A Coin And Got Tails")
-            print("-----------------------------------------")
+            print("------------------------------------------")
+            print ("Result: You Flipped A Coin And Got: Tails")
+            print("------------------------------------------")
     elif DSelect == 2:
         Roll = Dice.Roll(D4.NoofFaces)
         print("-----------------------------------------------")
