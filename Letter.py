@@ -6,6 +6,9 @@
 # - rewrite the class so you can create different objects for finding if letters are members of different letter groups
 
 
+#Class to check if its a vowel
+from re import U
+
 
 class lettercheck:
     def checker(UInput):
@@ -16,6 +19,7 @@ class lettercheck:
             output = False
             return output
 
+#loop to make more fun
 UInput = str
 while UInput != "QUIT":
     print ("-----------------------------------------------------------")
@@ -29,7 +33,8 @@ while UInput != "QUIT":
         print ("")
         print ("---------------------------")
         print ("Quiting, Thanks For Playing")
-        print ("---------------------------")
+        print ("---------------------------")        
+        print ("") 
     elif lettercheck.checker(UInput) == True:
         print ("")
         print ("-------------------------------------------------------")
