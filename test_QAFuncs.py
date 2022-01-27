@@ -5,3 +5,6 @@ def test_fact():
 
 def list_of_squares():
     assert QACommsTestFunc.list_of_squares(2) == 4
+
+def vowels():
+    assert QACommsTestFunc.vowels("letter") == "ee"
