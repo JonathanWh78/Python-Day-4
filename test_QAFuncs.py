@@ -1,4 +1,4 @@
 import QACommsTestFunc
 
 def test_fact():
-    assert QACommsTestFunc.fact(3) == 6
+    assert QACommsTestFunc.fact(3) == 2
