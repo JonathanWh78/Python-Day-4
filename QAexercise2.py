@@ -3,12 +3,12 @@
 
 openedfile = open("teams.txt")
 readfile = openedfile.readlines()
-print (readfile)
 openedfile.close()
-readfile.insert(8,"This is a new line\n")
+readfile.insert(0,"This is a new line\n")
 openedfile = open("teams.txt","w")
 openedfile.writelines(readfile)
 openedfile.close()
 
-# for line in range(1, 10):
-#     print(line)
+perline = ""
+for line in readfile:
+    print(line)
