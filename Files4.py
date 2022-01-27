@@ -12,12 +12,12 @@ openedfile.close()
 
 #inserts text
 
-# #inserting files
-# openedfile = open("README.md")
-# readfile = openedfile.readlines()
-# print (readfile)
-# openedfile.close()
-# readfile.insert(8,"\ninserted line\n")
-# openedfile = open("README.md","w")
-# openedfile.writelines(readfile)
-# openedfile.close()
+#inserting files
+openedfile = open("README.md")
+readfile = openedfile.readlines()
+print (readfile)
+openedfile.close()
+readfile.insert(8,"\ninserted line\n")
+openedfile = open("README.md","w")
+openedfile.writelines(readfile)
+openedfile.close()
