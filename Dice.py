@@ -6,7 +6,7 @@
 
 from random import randint
 
-
+#class for setting default face to 6 and has a roll function
 class Dice:
     def __init__(self, NoofFaces = 6):
         self.NoofFaces = NoofFaces
@@ -15,24 +15,17 @@ class Dice:
         rdmroll = randint (1, Die)
         return rdmroll
 
-D2 = Dice.Roll(2)
-D4 = Dice.Roll(4)
-D6 = Dice()
-D8 = Dice.Roll(8)
-D10 = Dice.Roll(10)
-D20 = Dice.Roll(20)
-print (D6.NoofFaces)
-
+#objects overwite the default value with the correct one for the dice
 D2 = Dice(2)
 D4 = Dice(4)
 D6 = Dice()
 D8 = Dice(8)
 D10 = Dice(10)
 D20 = Dice(20)
+D100 = Dice(100)
 print (D2.NoofFaces)
 
-Roll = Dice.Roll(D2.NoofFaces)
-print(Roll)
+#Loop to make it feel more interactive
 DSelect = int
 while DSelect != 0:
     print("")
@@ -43,6 +36,7 @@ while DSelect != 0:
     print("Press 4: To Roll A D8")
     print("Press 5: To Roll A D10")
     print("Press 6: To Roll A D20")
+    print("Press 7: To Roll A D100")
     print("Press 0: To Quit")
     print("-----------------------")
     print("")
@@ -82,6 +76,11 @@ while DSelect != 0:
         Roll = Dice.Roll(D20.NoofFaces)
         print("------------------------------------------------")
         print ("Result: You Rolled a D20 And Got A: " +str(Roll))
+        print("------------------------------------------------")
+    elif DSelect == 7:
+        Roll = Dice.Roll(D100.NoofFaces)
+        print("------------------------------------------------")
+        print ("Result: You Rolled a D100 And Got A: " +str(Roll))
         print("------------------------------------------------")
 
     elif DSelect == 0:
