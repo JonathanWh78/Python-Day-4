@@ -4,9 +4,10 @@
 
 openedfile = open("teams.txt")
 readfile = openedfile.readlines()
-#print (readfile)
 openedfile.close()
-readfile.insert(1,"Manchester United\n""\nManchester City\n""\nLeeds\n""\nLiverpool\n""\nChelsea\n")
+#readfile.insert(1,"Manchester United\n""\nManchester City\n""\nLeeds\n""\nLiverpool\n""\nChelsea\n") # commented out as testing the correct output
+print(readfile[1])
+print(readfile[7])
 openedfile = open("teams.txt","w")
 openedfile.writelines(readfile)
 openedfile.close()
