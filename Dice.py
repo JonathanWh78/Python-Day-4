@@ -25,6 +25,7 @@ D20 = Dice(20)
 D100 = Dice(100)
 
 #Loop to make it feel more interactive
+#implemented multi roles
 DSelect = int
 while DSelect != 0:
     print("")
@@ -52,35 +53,47 @@ while DSelect != 0:
             print ("Result: You Flipped A Coin And Got: Tails")
             print("------------------------------------------")
     elif DSelect == 2:
-        Roll = Dice.Roll(D4.NoofFaces)
-        print("-----------------------------------------------")
-        print ("Result: You Rolled a D4 And Got A: " +str(Roll))
-        print("-----------------------------------------------")
+        quantity = int(input ("How Many Would You Like To Roll: "))
+        for i in range(quantity):
+                Roll = Dice.Roll(D4.NoofFaces)
+                print("----------------------------------------------")
+                print("Result: You Rolled a D4 And Got A: " +str(Roll))
+                print("----------------------------------------------")
     elif DSelect == 3:
-        Roll = Dice.Roll(D6.NoofFaces)
-        print("-----------------------------------------------")
-        print ("Result: You Rolled a D6 And Got A: " +str(Roll))
-        print("-----------------------------------------------")
+        quantity = int(input ("How Many Would You Like To Roll: "))
+        for i in range(quantity):
+                Roll = Dice.Roll(D6.NoofFaces)
+                print("----------------------------------------------")
+                print("Result: You Rolled a D6 And Got A: " +str(Roll))
+                print("----------------------------------------------")
     elif DSelect == 4:
-        Roll = Dice.Roll(D8.NoofFaces)
-        print("-----------------------------------------------")
-        print ("Result: You Rolled a D8 And Got A: " +str(Roll))
-        print("-----------------------------------------------")
+        quantity = int(input ("How Many Would You Like To Roll: "))
+        for i in range(quantity):
+                Roll = Dice.Roll(D8.NoofFaces)
+                print("----------------------------------------------")
+                print("Result: You Rolled a D8 And Got A: " +str(Roll))
+                print("----------------------------------------------")
     elif DSelect == 5:
-        Roll = Dice.Roll(D10.NoofFaces)
-        print("------------------------------------------------")
-        print ("Result: You Rolled a D10 And Got A: " +str(Roll))
-        print("------------------------------------------------")
+        quantity = int(input ("How Many Would You Like To Roll: "))
+        for i in range(quantity):
+                Roll = Dice.Roll(D10.NoofFaces)
+                print("----------------------------------------------")
+                print("Result: You Rolled a D10 And Got A: " +str(Roll))
+                print("----------------------------------------------")
     elif DSelect == 6:
-        Roll = Dice.Roll(D20.NoofFaces)
-        print("------------------------------------------------")
-        print ("Result: You Rolled a D20 And Got A: " +str(Roll))
-        print("------------------------------------------------")
+        quantity = int(input ("How Many Would You Like To Roll: "))
+        for i in range(quantity):
+                Roll = Dice.Roll(D20.NoofFaces)
+                print("----------------------------------------------")
+                print("Result: You Rolled a D20 And Got A: " +str(Roll))
+                print("----------------------------------------------")
     elif DSelect == 7:
-        Roll = Dice.Roll(D100.NoofFaces)
-        print("------------------------------------------------")
-        print ("Result: You Rolled a D100 And Got A: " +str(Roll))
-        print("------------------------------------------------")
+        quantity = int(input ("How Many Would You Like To Roll: "))
+        for i in range(quantity):
+                Roll = Dice.Roll(D100.NoofFaces)
+                print("----------------------------------------------")
+                print("Result: You Rolled a D100 And Got A: " +str(Roll))
+                print("----------------------------------------------")
 
     elif DSelect == 0:
         print("-------------------")
