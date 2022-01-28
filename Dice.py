@@ -25,7 +25,7 @@ D20 = Dice(20)
 D100 = Dice(100)
 
 #Loop to make it feel more interactive
-#implemented multi roles
+#implemented multi roles 
 DSelect = int
 while DSelect != 0:
     print("")
@@ -43,15 +43,17 @@ while DSelect != 0:
     DSelect = int(input("Please Select An Option: "))
     print("")
     if DSelect == 1:
-        Roll = Dice.Roll(D2.NoofFaces)
-        if Roll == 1:
-            print("------------------------------------------")
-            print ("Result: You Flipped A Coin And Got: Heads")
-            print("------------------------------------------")
-        elif Roll == 2:
-            print("------------------------------------------")
-            print ("Result: You Flipped A Coin And Got: Tails")
-            print("------------------------------------------")
+        quantity = int(input ("How Many Coins You Like To Flip: "))
+        for i in range(quantity):
+            Roll = Dice.Roll(D2.NoofFaces)
+            if Roll == 1:
+                print("------------------------------------------")
+                print ("Result: You Flipped A Coin And Got: Heads")
+                print("------------------------------------------")
+            elif Roll == 2:
+                print("------------------------------------------")
+                print ("Result: You Flipped A Coin And Got: Tails")
+                print("------------------------------------------")
     elif DSelect == 2:
         quantity = int(input ("How Many Would You Like To Roll: "))
         for i in range(quantity):
